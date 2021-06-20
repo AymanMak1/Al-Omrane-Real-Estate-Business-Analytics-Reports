@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <title>Omrane 48 Map</title>
+    <link rel="stylesheet" href="app_node_modules/iziModal.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js" 
+    integrity="sha512-yadYcDSJyQExcKhjKSQOkBKy2BLDoW6WnnGXCAkCoRlpHGpYuVuBqGObf3g/TdB86sSbss1AOP4YlGSb6EKQPg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+ <div id="map">
+ </div>
+ <div id="modal">
+    <!-- Modal content -->
+</div>
+ <style>
+     *{
+         padding:0;
+         margin:0;
+         box-sizing: border-box;
+     }
+     #map { height: 100vh; width:100vw; }
+     .leaflet-control-attribution.leaflet-control{
+         display: none;
+     }
+ </style>
+ <!-- App node modules-->
+  <script src="app_node_modules/leaflet.js"></script>
+  <script src="app_node_modules/leaflet-providers.js"></script>
+  <script src="app_node_modules/jquery.min.js"></script>
+  <script src="app_node_modules/axios.min.js"></script>
+  <script src="app_node_modules/iziModal.min.js"></script>
+  <!-- Custom JS-->
+  <script src="js/map/initMap.js"></script>
+  <script src="js/map/geojson/orientalGeoJson.js"></script>
+  <script src="js/map/getOperationsDataset.js"></script>
+  <script src="js/map/app.js"></script>
+  <script src="js/map/geojson/oujda.js"></script>
+</body>
+</html>
